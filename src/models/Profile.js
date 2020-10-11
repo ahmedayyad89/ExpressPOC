@@ -9,7 +9,7 @@ const ProfileSchema = new Schema(
       trim: true
     },
     firstName: {
-      type: String,
+      type: String,  
       required: true,
       minlength: 2,
       trim: true
@@ -19,12 +19,12 @@ const ProfileSchema = new Schema(
       required: false,
       trim: true
     },
-    address1: {
+    address: {
       type: String,
       required: true,
       trim: true
     },
-    address2: {
+    gender: {
       type: String,
       required: false,
       trim: true
@@ -46,7 +46,7 @@ const ProfileSchema = new Schema(
     },
     city: {
       type: String,
-      required: true,
+      required: false,
       trim: true
     },
     phone: {
@@ -59,30 +59,30 @@ const ProfileSchema = new Schema(
       required: false,
       trim: true
     },
-    passportFilePath: {
+    passportFilePath: [{
       type: String,
       required: false,
-    },
-    drivingLicenseFilePath: {
+    }],
+    drivingLicenseFilePath: [{
       type: String,
       required: false,
-    },
-    nothingFilePath: {
+    }],
+    nothingFilePath: [{
       type: String,
       required: false,
-    },
-    assignmentFilePath: {
+    }],
+    assignmentFilePath: [{
       type: String,
       required: false,
-    },
-    otherFilePath: {
+    }],
+    otherFilePath: [{
       type: String,
       required: false,
-    },
-    anotherFilePath: {
+    }],
+    anotherFilePath: [{
       type: String,
       required: false
-    }
+    }]
 
   },
   {

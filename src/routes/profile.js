@@ -12,6 +12,8 @@ router.post("/upload", Authorize.check, fileUpload({
     limits: { fileSize: 2 * 1024 * 1024 },
 }), ProfileController.saveProfile);
 router.get("/history", Authorize.check, ProfileController.findHistory);
+router.post("/changePassword", Authorize.check, ProfileController.changePassword);
+router.get("/download", ProfileController.download);
 
 
 

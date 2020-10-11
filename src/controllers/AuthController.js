@@ -7,9 +7,8 @@ import AppError from "../exeptions/AppError";
 import MailService from "../services/MailService";
 import randomize from "../utils/randomize";
 import config from "../config/app";
-import fetch from 'node-fetch';
 import RecaptchaService from '../services/RecaptchaService';
-import crypto from 'crypto';
+
 
 class AuthController {
   @TryCatchErrorDecorator
